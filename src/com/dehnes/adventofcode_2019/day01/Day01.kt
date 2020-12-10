@@ -1,10 +1,8 @@
 package com.dehnes.adventofcode_2019.day01
 
-import java.io.File
+import com.dehnes.adventofcode_2019.inputLines
 
-val masses = File("resources/day01.txt")
-        .readLines()
-        .map { it.toLong() }
+val masses = inputLines(1).map { it.toLong() }
 
 fun main() {
     println(masses.map { (it / 3) - 2 }.sum()) // 3325342
